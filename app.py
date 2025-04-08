@@ -19,7 +19,7 @@ st.markdown("Powered by a Temporal Fusion Transformer trained on BTC indicators"
 # ====================
 # Load data
 # ====================
-data_path = "data/bitcoin_prices.csv"
+data_path = "bitcoin_prices.csv"
 df = pd.read_csv(data_path, parse_dates=["timestamp"])
 df = df.sort_values("timestamp").reset_index(drop=True)
 df["group_id"] = "BTC"
